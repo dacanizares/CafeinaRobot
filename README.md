@@ -1,4 +1,4 @@
 CafeinaRobot
 ============
 
-Learn programming is fun with Cafeina Robot
+A fun way to learn programming
