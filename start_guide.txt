@@ -1,0 +1,8 @@
+CafeinaRobot v0.2 Beta
+------------------------
+
+Install:
+1. http://python.org/ftp/python/2.7.3/python-2.7.3.msi
+2. http://pygame.org/ftp/pygame-1.9.1.win32-py2.7.msi
+3. Right click on main.py and click on "Edit with IDLE". 
+4. Have fun and try to not destroy the robot

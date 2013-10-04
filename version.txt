@@ -1,0 +1,18 @@
+CafeinaRobot Version History
+----------------------------
+
+Version 0.2:
+------------
+
+- (NEW) Create worlds from nested lists.
+- Old creation methods considered as deprecated.
+
+
+Version 0.1:
+------------
+
+- Initial beta relase.
+
+
+
+© 2013. Cafeina Softworks
