@@ -1,4 +1,4 @@
-__all__ = ["entities", "cafeinarobot"]
+__all__ = []
 
 import pygame, sys, os
 from pygame.locals import *

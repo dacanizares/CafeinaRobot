@@ -9,7 +9,7 @@ class Content:
 
     # Tries to load an image
     # colorkey: -1, (255,255,255), None
-    def load_image(self, name, colorkey=None, scale=1,):
+    def load_image(self, name, colorkey=None, scale=1):
         fullname = os.path.join(self.path, name)
         try:
             image = pygame.image.load(fullname)
@@ -68,7 +68,7 @@ class Game:
         print "Game has been intialized"
            
     # Inits video
-    def init_video(self, caption, width=800, height=600, fullscreen=False, fps=60):
+    def init_video(self, caption, width=800, height=640, fullscreen=False, fps=60):
         if fullscreen:
             pygame.display.set_mode((width, height), pygame.FULLSCREEN)
         else:

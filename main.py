@@ -28,7 +28,7 @@ robot.create(world, direction, speed)
 robot.turn_on()
 
 # YOUR CODE HERE
-
+robot.forward()
 
 # Power off the robot
 robot.turn_off()

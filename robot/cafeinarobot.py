@@ -4,9 +4,11 @@ from pygame.locals import *
 import cafeinagame
 from cafeinagame import *
 
-import random
+from contentman import ContentMan
+from worlder import Worlder
+from robot import Robot
 
-import entities
+import random
 
 class CafeinaRobot:
     # Init game
@@ -17,31 +19,32 @@ class CafeinaRobot:
 
         # Load content
         content = cafeinagame.core.Content('Content/')
-        self.worlder = entities.Worlder(content, out_X, out_Y)       
+        contentman = ContentMan(content)
+        worlder = Worlder(content, out_X, out_Y)       
 
         # Load world        
-        self.world = self.worlder.build_world(world)
+        self.world = worlder.build_world(world)
 
          # Load robot        
-        animations = [self.worlder.build_robot_animation('north'),
-                      self.worlder.build_robot_animation('east'),
-                      self.worlder.build_robot_animation('south'),
-                      self.worlder.build_robot_animation('west')]
+        animations = [contentman.build_robot_animation('north'),
+                      contentman.build_robot_animation('east'),
+                      contentman.build_robot_animation('south'),
+                      contentman.build_robot_animation('west')]
         # If we dont get a robot position we ask to Wolder for it
         if robot_position is None:
-            robot_position = self.worlder.robot_position
-        self.robot = entities.Robot(animations, robot_position, robot_direction, robot_velocity, TILE_SIZE)
+            robot_position = worlder.robot_position
+        self.robot = Robot(animations, robot_position, robot_direction, robot_velocity, TILE_SIZE)
 
         # Load objective
         if objective_position is None:
-            objective_position = self.worlder.objective_position
-        self.objective = self.worlder.build_objective(objective_position)
+            objective_position = worlder.objective_position
+        self.objective = contentman.build_objective(objective_position)
 
         # Load background
-        self.background = self.worlder.build_background(self.game.width, self.game.height)
+        self.background = worlder.build_background(self.game.width, self.game.height)
 
         # Load explotion
-        self.explotion = self.worlder.build_explotion()        
+        self.explotion = contentman.build_explotion()        
         
         # Add managed entities to game
         # this will auto-update and draw them
