@@ -15,4 +15,4 @@ Version 0.1:
 
 
 
-© 2013. Cafeina Softworks
+© 2013 - 2015. The Science of Code.
