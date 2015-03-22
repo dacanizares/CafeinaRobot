@@ -16,11 +16,8 @@ class state:
 s = state()
 
 # ENGLISH DEFINITIONS
-def create(world, robot_direction, robot_velocity, robot_position=None, objective_position=None,out_X=0, out_Y=0):
-    s.cr = cafeinarobot.CafeinaRobot(world, robot_direction, robot_velocity, robot_position, objective_position,out_X, out_Y)
-
-def configure(posicion_robot, direccion_robot, velocidad_robot, posicion_objetivo, muros):
-    s.cr = cafeinarobot.CafeinaRobot(muros, direccion_robot, velocidad_robot, posicion_robot, posicion_objetivo,0,0)
+def create(world, robot_direction, robot_velocity, out_X=0, out_Y=0):
+    s.cr = cafeinarobot.CafeinaRobot(world, robot_direction, robot_velocity, out_X, out_Y)
 
 def turn_on():
     s.cr.turn_on()
@@ -48,11 +45,9 @@ def has_finished():
     return s.cr.has_finished()
 
 # SPANISH DEFINITIONS
-def crear(world, robot_direction, robot_velocity, robot_position=None, objective_position=None,out_X=0, out_Y=0):
-    s.cr = cafeinarobot.CafeinaRobot(world, robot_direction, robot_velocity, robot_position, objective_position,out_X, out_Y)
+def crear(world, robot_direction, robot_velocity, out_X=0, out_Y=0):
+    s.cr = cafeinarobot.CafeinaRobot(world, robot_direction, robot_velocity, out_X, out_Y)
 
-def configurar(posicion_robot, direccion_robot, velocidad_robot, posicion_objetivo, muros):
-    s.cr = cafeinarobot.CafeinaRobot(muros, direccion_robot, velocidad_robot, posicion_robot, posicion_objetivo,0,0)
 
 def encender():
     s.cr.turn_on()
