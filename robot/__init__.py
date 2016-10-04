@@ -8,69 +8,64 @@ from cafeinagame import *
 
 import cafeinarobot
 
-class state:
-    def __init__(self):
-        return
-
-
-s = state()
+cr = None
 
 # ENGLISH DEFINITIONS
 def create(world, robot_direction, robot_velocity, out_X=0, out_Y=0):
-    s.cr = cafeinarobot.CafeinaRobot(world, robot_direction, robot_velocity, out_X, out_Y)
+    global cr
+    cr = cafeinarobot.CafeinaRobot(world, robot_direction, robot_velocity, out_X, out_Y)
 
 def turn_on():
-    s.cr.turn_on()
+    cr.turn_on()
  
 def update():
-    s.cr.update()
-    s.cr.draw()
+    cr.update()
+    cr.draw()
 
 def forward():
-    s.cr.forward()
+    cr.forward()
 
 def left():
-    s.cr.turn_left()
+    cr.turn_left()
 
 def right():
-    s.cr.turn_right()
+    cr.turn_right()
 
 def turn_off():
-    s.cr.shutdown()
+    cr.shutdown()
 
 def sense():
-    return s.cr.sense()
+    return cr.sense()
 
 def has_finished():
-    return s.cr.has_finished()
+    return cr.has_finished()
 
 # SPANISH DEFINITIONS
 def crear(world, robot_direction, robot_velocity, out_X=0, out_Y=0):
-    s.cr = cafeinarobot.CafeinaRobot(world, robot_direction, robot_velocity, out_X, out_Y)
-
+    cr = cafeinarobot.CafeinaRobot(world, robot_direction, robot_velocity, out_X, out_Y)
 
 def encender():
-    s.cr.turn_on()
+    cr.turn_on()
  
 def actualizar():
-    s.cr.update()
-    s.cr.draw()
+    cr.update()
+    cr.draw()
 
 def avanzar():
-    s.cr.forward()
+    cr.forward()
 
 def izquierda():
-    s.cr.turn_left()
+    cr.turn_left()
 
 def derecha():
-    s.cr.turn_right()
+    cr.turn_right()
 
 def apagar():
-    s.cr.shutdown()
+    cr.shutdown()
 
 def hay_muro():
-    return s.cr.sense()
+    return cr.sense()
 
 def ha_terminado():
-    return s.cr.has_finished()
+    return cr.has_finished()
     

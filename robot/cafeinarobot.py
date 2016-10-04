@@ -14,11 +14,11 @@ class CafeinaRobot:
     # Init game
     def __init__(self, world, robot_direction, robot_velocity,out_X=0, out_Y=0):
         TILE_SIZE = 80
-        self.game = cafeinagame.core.Game()
+        self.game = cafeinagame.game.Game()
         self.game.init_video('Cafeina Robot')
 
         # Load content
-        content = cafeinagame.core.Content('Content/')
+        content = cafeinagame.content.Content('Content/')
         contentman = ContentMan(content)
              
         # Load world        
@@ -78,8 +78,7 @@ class CafeinaRobot:
 
     # Start!
     def turn_on(self):
-        self.gamecycle_moving()
-        
+        self.gamecycle_moving()        
 
     # Robot -> Forward    
     def forward(self):
@@ -90,8 +89,7 @@ class CafeinaRobot:
         self.robot.forward()
         self.gamecycle_moving()
         if self.has_finished():
-            return
-        
+            return        
 
     # Robot -> Left
     def turn_left(self):
