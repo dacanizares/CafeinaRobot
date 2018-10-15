@@ -1,48 +1,50 @@
-CafeinaRobot
-============
-
-By Daniel Cañizares Corrales
+# Cafeina Robot
 
 This was a short game that I made some years ago to teach programming in a fun way. It was used by my students and it worked well, but then it came Code.org and I realized that their games were better for learn programming so I decided to stop this project. Anyway, you can see the source code, critize it and maybe learn something.
 
-Instructions
-============
+![Cafeina Robot](https://equilaterus.github.io/assets/img/projects/cafeina-robot.PNG)
 
-For Windows:
+## Instructions
 
-- Download and install https://www.python.org/ftp/python/2.7.12/python-2.7.12.msi
+* Install Python *3.7.x* from https://www.python.org/
 
-- Download and install http://pygame.org/ftp/pygame-1.9.1.win32-py2.7.msi
+* Clone and open this repo on VS Code ([you can follow this guide](https://github.com/equilaterus/wikilaterus/wiki/Cloning-a-repo-on-Github))
 
-- Right click on main.py and click on "Edit with IDLE". 
+* On the terminal run this command to download PyGame:
 
-- Have fun and DO NOT destroy the robot
+    ```
+    pip install -U pygame --user
+    ```
 
-For other OS:
+* Execute this command to run the game:
 
-- Download and install Python 2.7.x from https://www.python.org/
+    ```
+    python main.py
+    ```
 
-- Download and install Python 2.7.x from http://www.pygame.org/download.shtml
+* If you see the game everything was OK. You can modify main.py to change the robot behavior and re-run the previous command to see it in action!
 
 
-Version History
-===============
+## Version History
 
-Version 0.2.1:
-==============
+
+### Version 0.3:
+
+* Updated to Python 3.7.x
+
+### Version 0.2.1:
+
 
 - Removed duplicated code
 - Minor code changes
 - Changed starting map
 
-Version 0.2:
-============
+### Version 0.2:
 
 - (NEW) Create worlds from nested lists.
 - Old creation methods considered as deprecated.
 
 
-Version 0.1:
-============
+### Version 0.1:
 
 - Initial beta relase.

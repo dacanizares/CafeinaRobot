@@ -13,9 +13,9 @@ class Content:
         fullname = os.path.join(self.path, name)
         try:
             image = pygame.image.load(fullname)
-        except pygame.error, message:
-            print 'Cannot load image:', name
-            raise SystemExit, message
+        except pygame.error(message):
+            print("Cannot load image:", name)
+            raise SystemExit(message)
         # Apply color key
         image = image.convert()
         if colorkey is not None:
@@ -42,9 +42,9 @@ class Content:
         fullname = os.path.join(self.path, name)
         try:
             sound = pygame.mixer.Sound(fullname)
-        except pygame.error, message:
-            print 'Cannot load sound:', wav
-            raise SystemExit, message
+        except pygame.error(message):
+            print("Cannot load sound:", wav)
+            raise SystemExit(message)
         return sound
 
     # Loads a set of images

@@ -6,7 +6,8 @@ from pygame.locals import *
 import cafeinagame
 from cafeinagame import *
 
-import cafeinarobot
+from .cafeinarobot import CafeinaRobot
+
 
 cr = None
 

@@ -5,11 +5,11 @@ from pygame.locals import *
 class Game:
     # Inits game
     def __init__(self):
-        print "Cafeinagame v0.2"
-        print ""
+        print("Cafeinagame v0.2")
+        print("")
         pygame.init()
         self.managed_entities = {}
-        print "Game has been intialized"
+        print("Game has been intialized")
            
     # Inits video
     def init_video(self, caption, width=800, height=640, fullscreen=False, fps=60):
@@ -33,7 +33,7 @@ class Game:
         background.fill((0, 0, 0))
         self.background = background      
 
-        print "Video has been intialized"
+        print("Video has been intialized")
 
     def get_events(self):
         return pygame.event.get()
@@ -97,7 +97,7 @@ class Game:
     # Adds a new entity to the system
     def add_entity(self, entity, z_index):
         if z_index not in self.valid_z_index:
-            print 'Invalid z_index'
+            print("Invalid z_index")
             raise SystemExit
         
         entities = []

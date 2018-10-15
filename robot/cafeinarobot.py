@@ -4,9 +4,9 @@ from pygame.locals import *
 import cafeinagame
 from cafeinagame import *
 
-from contentman import ContentMan
-from worlder import Worlder
-from robot import Robot
+from .contentman import ContentMan
+from .worlder import Worlder
+from .robot import Robot
 
 import random
 
@@ -145,6 +145,6 @@ class CafeinaRobot:
             self.state = 'pause'
         else:
             self.state = 'play'
-        print self.state
+        print(self.state)
         
                 
