@@ -47,4 +47,4 @@ This was a short game that I made some years ago to teach programming in a fun w
 
 ### Version 0.1:
 
-- Initial beta relase.
+- Initial beta release.
